@@ -1,0 +1,17 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  security:
+    user:
+      name: Grupo06
+      password: bc24_06
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/adamsam12/config-repository
+          search-paths: /
+          default-label: "dev"
